@@ -1,0 +1,21 @@
+body {
+    background-color: #A52A2A; /* warna coklat */
+    font-family: Arial, sans-serif; /* jenis huruf */
+    color: #FFEBCD; /* warna coral agak muda untuk teks utama */
+}
+
+.kartu-profil {
+    width: 300px;
+    margin: 50px auto; 
+    padding: 20px;
+    backgorund-color: white;
+    border-radius: 15px; /* sudut jdi lengkung */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* efek bayangan */
+    text-align: center;
+}
+
+
+.kartu-profil img {
+    width: 110px
+    border-radius: 50px; /* trik membuat gambar persegi mejadi lingkungan sempurna */
+}
