@@ -1,21 +1,47 @@
+/* Pengaturan untuk seluruh latar belakang halaman web */
 body {
-    background-color: #A52A2A; /* warna coklat */
-    font-family: Arial, sans-serif; /* jenis huruf */
-    color: #FFEBCD; /* warna coral agak muda untuk teks utama */
+    background-color: #A52A2A; /* Warna coklat latar halaman */
+    font-family: Arial, sans-serif; /* Jenis huruf yang digunakan */
+    color: #FFEBCD; /* Warna teks utama halaman */
 }
 
+/* Pengaturan bentuk dan desain kartu profil */
 .kartu-profil {
     width: 200px;
-    margin: 50px auto; 
+    margin: 50px auto; /* Membuat posisi kartu tepat di tengah layar */
     padding: 20px;
-    backgorund-color: white;
-    border-radius: 15px; /* sudut jdi lengkung */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* efek bayangan */
-    text-align: center;
+    background-color: white; /* PERBAIKAN: Sebelumnya tertulis 'backgorund-color' (typo) */
+    border-radius: 15px; /* Membuat sudut-sudut kartu menjadi melengkung */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan halus di sekitar kartu */
+    text-align: center; /* Membuat semua teks & elemen di dalam kartu sejajar di tengah */
+    color: #333333; /* PENAMBAHAN: Agar teks di dalam kartu berwarna gelap sehingga terbaca jelas di atas warna latar putih */
 }
 
-
+/* Pengaturan khusus untuk gambar foto profil di dalam kartu */
 .kartu-profil img {
-    width: 110px
-    border-radius: 50px; /* trik membuat gambar persegi mejadi lingkungan sempurna */
+    width: 110px; /* PERBAIKAN: Ditambahkan tanda titik koma (;) di akhir baris yang sebelumnya hilang */
+    height: 110px; /* PERBAIKAN: Ditambahkan height agar gambar persegi membuat lingkaran sempurna */
+    object-fit: cover; /* Mencegah gambar terdistorsi/gepeng */
+    border-radius: 50%; /* PERBAIKAN: Menggunakan 50% untuk membuat gambar berbentuk lingkaran sempurna */
+}
+
+/* Pengaturan warna link Instagram */
+.kartu-profil a {
+    color: #A52A2A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Pengaturan tampilan tombol */
+.kartu-profil button {
+    padding: 8px 15px;
+    background-color: #A52A2A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kartu-profil button:hover {
+    background-color: #8b2222; /* Warna tombol saat disorot kursor */
 }
